@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+ :root{
+    --bg-col:#fff;
+    --box-col:transparent;
+    --mov-col1:#8093f1;
+    --mov-col2:#ee6055;
+    --form-col:#fff;
+    --blk-col:#000;
+    --whi-col:#fff;
+    --inp-col:#8f8f8f;
+    --green: #27ae60;
+    --dark-color: #219150;
+    --black: #444;
+    --light-color: #666;
+    --border: 1rem solid rgba(0,0,0,.1);
+    --border-hover: .1rem solid var(--black);
+    --box-shadow: 0 .5rem 1rem (0,0,0,.1);
+    
+ }
+
+*{
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    transition: width none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, .9);
+    position: fixed;
+    top: 0;
+    right: -105%;
+    z-index: 10000;
+    height: 100%;
+    width: 100%;
+}
+
+.login-form.active{
+    right: 0;
+}
+
+.login-form form {
+    display: block;
+    background: #fff;
+    border: var(--border);
+    width: 40rem;
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    margin: 1rem;
+}
+
+.login-form form h3 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+    text-align: center;
+}
+
+.login-form form span {
+    display: table-column;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+.login-form form p a {
+    color: var(--green);
+    text-decoration: underline;
+}
+
+.login-form #close-login-btn {
+    position: absolute;
+    top: 1.5rem;
+    right: 5rem;
+    color: #000;
+    size: 20px;
+}
+
+.login-form form .box {
+    width: 100%;
+    margin: .7rem 0;
+    font-size: 1.6rem;
+    border: var(--border);
+    border-radius: .5rem;
+    padding: 1rem 1.2rem;
+    color: var(--black);
+    text-transform: none;
+
+}
+
+.login-form form .checkbox {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 2rem;
+}
+
+.login-form form .checkbox label {
+    font-size: 1.5rem;
+    color: var(--light-color);
+    cursor: pointer;
+}
+
+.normal1 {
+    width: 100%;
+    margin-top: 1rem;
+    font-display: inline-block;
+    padding: .9rem 3rem;
+    border-radius: .5rem;
+    color: #fff;
+    background: var(--green);
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.normal1:hover {
+    background: var(--dark-color);
+}

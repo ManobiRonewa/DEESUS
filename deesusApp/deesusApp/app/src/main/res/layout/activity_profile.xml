@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FFFFFF"
+    tools:context=".ProfileActivity">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="245dp"
+            android:layout_height="218dp"
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/r" />
+
+        <TextView
+            android:id="@+id/registrationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Sign Up"
+            android:textColor="#151515"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/userEditTextReg"
+            android:layout_width="269dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="24dp"
+            android:hint="name"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="#757575"
+
+            android:paddingBottom="10dp"
+            android:backgroundTint="#000000" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="269dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="20dp"
+            android:hint="Email"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="#757575"
+
+            android:paddingBottom="10dp"
+            android:backgroundTint="#000000" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="269dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="20dp"
+            android:hint="Phone Number"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="#757575"
+
+            android:paddingBottom="10dp"
+            android:backgroundTint="#000000" />
+
+        <EditText
+            android:id="@+id/retypePasswordEditText"
+            android:layout_width="269dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="20dp"
+            android:hint="Password"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="#757575"
+
+            android:paddingBottom="10dp"
+            android:backgroundTint="#000000" />
+
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="267dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/blue"
+            android:text="Create account"
+            android:textColor="#B0BEC5"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/alreadyUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Already a user?"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="8dp" />
+
+                <TextView
+                    android:id="@+id/clickToNextPage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="ins"
+                    android:text="Login"
+                    android:textColor="#00008B" />
+        </LinearLayout>
+
+</LinearLayout>

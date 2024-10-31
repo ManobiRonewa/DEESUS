@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_clothe"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Top Row: Back Button and Heading with black background and white text -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#000000"
+            android:padding="12dp">
+
+            <!-- Back Button -->
+            <Button
+                android:id="@+id/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#000000"
+                android:onClick="onBackPressed" />
+
+            <!-- Heading -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Stock Adding"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Item Name Input -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"
+        android:text="Product Name:"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/input_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Enter item name"
+        android:inputType="text"
+        android:textColor="#000000" />
+
+        <!-- Item Price Input -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"
+        android:text="Product Price:"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/input_item_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Enter item price"
+        android:inputType="number"
+        android:textColor="#000000" />
+
+
+        <!-- Item Image Upload -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"
+        android:text="Product Photo:"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/upload_image_button"
+            android:layout_width="238dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:background="#FFFFFF"
+            android:text="Choose Product Image"
+            android:textColor="@color/white" />
+
+        <!-- Add Button -->
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:text="Add Product"
+            android:textColor="@color/white" />
+
+
+
+
+    </LinearLayout>
+</ScrollView>
